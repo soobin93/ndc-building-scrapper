@@ -54,12 +54,14 @@ def get_properties_per_page(url, page):
             link = f"{BASE_URL}{link}"
 
             properties.append({
-                "title": title,
+                "image": "",
+                "suburb": "",
                 "address": address,
                 "price": price,
                 "size": size,
                 "type": property_type,
-                "link": link
+                "link": link,
+                "image_link": ""
             })
 
     return properties
